@@ -15,9 +15,9 @@ const Catalog = () => {
     dispatch(fetchCampers());
   }, [dispatch]);
 
-  console.log("Campers list:", campers);
-  console.log("Is loading:", isLoading);
-  console.log("Error:", error);
+  // console.log("Campers list:", campers);
+  // console.log("Is loading:", isLoading);
+  // console.log("Error:", error);
   return (
     <div>
       <h1>Catalog</h1>

@@ -1,0 +1,33 @@
+.header {
+  /* flex-direction: row; */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 64px;
+  background: var(--inputs);
+  position: relative;
+}
+.logoIcon {
+  z-index: 2;
+}
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 32px;
+}
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.link:hover,
+.link.active {
+  color: var(--button-hover);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
