@@ -9,7 +9,7 @@ const Location = ({ value, onChange }) => {
   const cities = useSelector(selectUniqueCities);
   // value - повна локація типу "Ukraine, Lviv"
   const selectedCity = value ? value.split(", ")[1] : "";
-  console.log(value);
+  //   console.log(value);
 
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
