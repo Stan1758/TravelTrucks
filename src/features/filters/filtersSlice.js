@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   location: "",
-  type: "", // тип кузова
+  form: "", // тип кузова
   amenities: [], // AC, kitchen, bathroom тощо
 };
 
@@ -14,8 +14,8 @@ const filtersSlice = createSlice({
     setLocation(state, action) {
       state.location = action.payload;
     },
-    setType(state, action) {
-      state.type = action.payload;
+    setForm(state, action) {
+      state.form = action.payload;
     },
     toggleAmenity(state, action) {
       const amenity = action.payload;
@@ -31,6 +31,6 @@ const filtersSlice = createSlice({
   },
 });
 
-export const { setLocation, setType, toggleAmenity, resetFilters } =
+export const { setLocation, setForm, toggleAmenity, resetFilters } =
   filtersSlice.actions;
 export default filtersSlice.reducer;

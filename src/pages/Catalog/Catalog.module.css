@@ -1,3 +1,11 @@
+.catalogWrapper {
+  display: flex;
+}
+.filterWrapper {
+  width: 360px;
+  margin-right: 17px;
+  margin-top: 48px;
+}
 .wrapper {
   padding-right: 47px;
   padding-bottom: 52px;

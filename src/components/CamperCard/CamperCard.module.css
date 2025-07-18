@@ -83,6 +83,7 @@
   height: 56px;
   text-decoration: none;
   background: var(--button);
+  transition: background-color 0.3s ease;
 }
 
 .showMoreBtn:hover {
