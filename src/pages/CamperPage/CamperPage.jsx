@@ -77,22 +77,24 @@ const CamperPage = () => {
 
         <div className={css.divider} />
 
-        {activeTab === "features" && (
-          <div className={css.bWrapper}>
-            <div className={css.frWrapper}>
-              <CamperFeatures camper={camper} />
-              <h3 className={css.titleFeatures}>Vehicle details</h3>
-              <div className={css.fDivider} />
-              <CamperSpecs camper={camper} />
-            </div>
+        <div className={css.bWrapper}>
+          <div className={css.frWrapper}>
+            {activeTab === "features" && (
+              <div className={css.frBackW}>
+                <CamperFeatures camper={camper} />
+                <h3 className={css.titleFeatures}>Vehicle details</h3>
+                <div className={css.fDivider} />
+                <CamperSpecs camper={camper} />
+              </div>
+            )}
+            {activeTab === "reviews" && (
+              <div className={css.bWrapper}>
+                {/* Тут можна рендерити CamperReviews або інший контент */}
+              </div>
+            )}
           </div>
-        )}
-
-        {activeTab === "reviews" && (
-          <div className={css.bWrapper}>
-            {/* Тут можна рендерити CamperReviews або інший контент */}
-          </div>
-        )}
+          <div className={css.formWrapper}>xx</div>
+        </div>
       </div>
     </Container>
   );

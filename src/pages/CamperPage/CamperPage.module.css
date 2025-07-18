@@ -41,10 +41,14 @@
   height: 588px;
 }
 .frWrapper {
-  padding: 44px 52px;
   border-radius: 10px;
   width: 631px;
+  border: 1px solid var(--gray-light);
+}
+.frBackW {
+  padding: 44px 52px;
   background: var(--inputs);
+  height: 100%;
 }
 .formWrapper {
   width: 641px;
