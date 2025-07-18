@@ -1,10 +1,31 @@
 .wrapper {
   padding-right: 47px;
+  padding-bottom: 52px;
 }
 .cards {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-top: 40px;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
+}
+.loadMoreBtn {
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 145px;
+  height: 56px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main);
+  transition: border-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+.loadMoreBtn:hover {
+  border: 1px solid var(--button-hover);
 }

@@ -1,8 +1,10 @@
 // src/features/favorites/favoritesSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
+const persistedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
 const initialState = {
-  items: [], // id кемперів
+  items: persistedFavorites, // id кемперів
 };
 
 const favoritesSlice = createSlice({
@@ -16,9 +18,11 @@ const favoritesSlice = createSlice({
       } else {
         state.items.push(id);
       }
+      localStorage.setItem("favorites", JSON.stringify(state.items)); // 🧠 зберігаємо
     },
     clearFavorites(state) {
       state.items = [];
+      localStorage.removeItem("favorites");
     },
   },
 });

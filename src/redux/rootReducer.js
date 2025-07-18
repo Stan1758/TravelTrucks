@@ -1,12 +1,11 @@
 // src/redux/rootReducer.js
-import { combineReducers } from "redux";
+import { combineReducers } from "@reduxjs/toolkit";
 import campersReducer from "../features/campers/campersSlice";
 import filtersReducer from "../features/filters/filtersSlice";
 import favoritesReducer from "../features/favorites/favoritesSlice";
-import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
-// persist config для обраного
 const favoritesPersistConfig = {
   key: "favorites",
   storage,

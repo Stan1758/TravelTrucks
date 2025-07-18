@@ -46,19 +46,7 @@
 }
 .priceFavoriteWrapper {
   display: flex;
-}
-.favoriteButton img {
-  width: 24px;
-  height: 24px;
-  padding: 0px;
-  pointer-events: none; /* щоб клік проходив на кнопку */
-  user-select: none;
-  transition: filter 0.3s ease;
-}
-
-.favoriteButton:hover img {
-  filter: brightness(0) saturate(100%) invert(25%) sepia(87%) saturate(7496%)
-    hue-rotate(354deg) brightness(92%) contrast(101%);
+  gap: 12px;
 }
 .reviewsLocation {
   display: flex;

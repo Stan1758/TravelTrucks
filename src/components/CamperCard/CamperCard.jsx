@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import css from "./CamperCard.module.css";
 import CamperFeatures from "../CamperFeatures/CamperFeatures";
-
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import heartIcon from "../../assets/heart.svg";
 import ratingIcon from "../../assets/rating.svg";
 import locationIcon from "../../assets/location.svg";
@@ -47,13 +47,7 @@ const CamperCard = ({ camper, onToggleFavorite, isFavorite }) => {
           <h2 className={css.name}>{name}</h2>
           <div className={css.priceFavoriteWrapper}>
             <p>€{Math.floor(price)}</p>
-            <button
-              onClick={handleFavoriteClick}
-              className={css.favoriteButton}
-              type="button"
-            >
-              <img src={heartIcon} alt="Favorite" />
-            </button>
+            <FavoriteButton camperId={id} />
           </div>
         </div>
         <div className={css.reviewsLocation}>
